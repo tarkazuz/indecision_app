@@ -1,0 +1,218 @@
+
+*{
+    color:#64403E;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #B2BCAA;
+    text-align: center;
+
+}
+
+.addOptButton{
+    background-color:#838E83;
+    color: #3c4a3c;
+    font-weight: bolder;
+    border: none;
+    border-bottom: #838E83 4px solid;
+    border-right: #838E83 4px solid;
+    border-radius:5px;
+    padding:0.4rem;
+}
+
+
+.header{
+    background-color: #3c4a3c;
+    padding-bottom: 2rem;
+}
+
+.header img{
+    width:4rem;
+}
+
+.header h1{
+    font-size: 3rem;
+    display:inline-block;
+    margin-bottom: 0;
+    padding-bottom: 0 ;
+    color: #C9CEBD 
+}
+
+.header h2{
+    color:#838E83;
+    font-size:1.2rem;
+}
+
+.optionsField{
+    background-color: #C9CEBD;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    padding-bottom:2rem;
+}
+
+.options{
+    padding: 1rem 0;
+}
+
+.option{
+    padding:1rem;
+    padding-left:3rem;
+    justify-content: space-between;
+    display:flex;
+    border-bottom: solid 1px #838E83;
+}
+
+.liOption{
+    font-size:1.5rem;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.liButton{
+    background: none;
+    border: none;
+    color: #3c4a3c;
+    font-size: 0.rem;
+}
+
+.choseButton{
+    font-weight: bolder;
+    font-size:1.6rem;
+    background: #C9CEBD;
+    border: none;
+    border-bottom: #838E83 4px solid;
+    border-right: #838E83 4px solid;
+    padding: 1.5rem 4rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+}
+.choseButton:hover{
+    padding: 2rem 4.5rem;
+    transition: 1s ease-in-out;
+    border-bottom: #64403E 5px solid;
+    border-right: #64403E 5px solid;
+}
+
+.choseButton:disabled{
+opacity:0.6;
+border-bottom: #838E83 4px solid;
+border-right: #838E83 4px solid;
+padding: 1.5rem 4rem;
+}
+
+.buttonRemove{
+    border: none;
+    background: none;
+    font-size:0.9rem;
+    color: #C9CEBD;
+}
+
+.widgetHeader{
+    background-color: #3c4a3c;
+    padding:1rem;
+    font-size:1.2rem;
+    justify-content: space-between;
+    display:flex;
+}
+
+.widgetHeader h3{
+    color: #C9CEBD;
+    margin: 0;
+}
+
+#input{
+    margin:auto;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    border-radius: 10px;
+    background:#3c4a3c;
+    color:  #C9CEBD;
+    width: 94%;
+    border: none;
+    border-bottom: #838E83 4px solid;
+    border-right: #838E83 4px solid;
+}
+
+
+/* styling the 3rd party component - Modal*/
+
+.ReactModalPortal >div{
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay{
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open{
+    opacity:1;
+}
+
+.modal{
+    background:  #838E83;
+    width:50vw;
+    height: 60vh;
+    margin: auto;
+    outline:none;
+    border: #C9CEBD 10px solid;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.modalBody{
+    text-transform: uppercase;
+    font-style: italic; 
+    font-size:1.5rem;
+    padding: 4rem;     
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+
+.modalTitle{
+    font-weight: lighter;
+}
+
+@media (max-width: 900px){
+    .optionsField{
+        width: 80%;
+    }
+
+    .modal{
+        width:75vw;
+        margin: auto;
+    }
+}
+@media (max-width: 600px){
+    .optionsField{
+        width: 90%;
+    }
+
+    .modal{
+        width:85vw;
+        margin: auto;
+    }
+    .addOptForm{
+        display: flex;
+        flex-direction: column;
+    }
+    #input{
+        margin-bottom: 0;
+        border-radius: 0px;
+        border: none;
+        width: 97%;
+    }
+    .addOptButton{
+        background-color:#838E83;
+        color: #3c4a3c;
+        font-weight: bolder;
+        border-radius:0px;
+    }
+    .choseButton{
+        margin: 1rem;
+    }
+}
