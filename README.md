@@ -11,3 +11,5 @@ The page has been styled with a single css file in a colour pallete adapted from
 
 The whole project has been developed based on the Indecision app project in the Udemy React course and has been created in the process of following the course
 https://www.udemy.com/course/react-2nd-edition/
+
+Deployed app can be viewed at:  https://react-indecision.netlify.app/
